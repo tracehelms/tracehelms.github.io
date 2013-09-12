@@ -1,1 +1,7 @@
+# System
+.DS_Store
+*.swp
+
+# Jekyll
 _site
+_drafts
