@@ -5,3 +5,7 @@
 # Jekyll
 _site
 _drafts
+
+# SCSS
+*.scssc
+css/compiled/*
