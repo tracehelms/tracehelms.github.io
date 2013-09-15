@@ -1,6 +1,6 @@
 url:  http://tracehelms.com
 name: Trace Helms
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', '*.scss']
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', '.ruby-version', '*.scss']
 
 markdown: redcarpet
 pygments: true
