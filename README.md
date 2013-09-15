@@ -14,7 +14,8 @@ Run `jekyll serve`. Browse to `http://localhost:4000`.
 ### Future Plans For This Site
 Failing to plan is planning to fail!  Here's what to expect:
 
-* Add a deploy to Amazon S3 script
+* Add a rake task to deploy to Amazon S3
+* Add a generator for new posts and pages
 * Update the front page to look like a web site, have posts on other pages
 * Add some style
 * Add a page with current goals
