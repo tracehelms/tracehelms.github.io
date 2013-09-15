@@ -1,17 +1,30 @@
-/***************************************************************************************** Common */
+/**************************************************************************************** Imports */
 /* Global Reset */
 @import '_reset.scss';
 
 /* Import The Symantic Grid System */
 @import '_grid.scss';
+$total-width: 100%; /* Sets fluid grid */
+
+/* Import Google Fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato|Lobster);
 
 /* Import Syntax Highlighting Styles */
 @import '_syntax.scss';
 
 
-/******************************************************************************************* Home */
-/* stuff goes here */
+/***************************************************************************************** Common */
+p {font-family: 'Lato', sans-serif;}
+.cursive-title {font-family: 'Lobster', cursive;}
 
+
+/******************************************************************************************* Home */
+# TODO this doesnt work
+.wrap {
+  @include column(12);
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /******************************************************************************************* Site */
 /* stuff goes here */
