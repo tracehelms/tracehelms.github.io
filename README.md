@@ -11,10 +11,15 @@ Run `rake build`.
 #### Serving The Site Locally
 Run `jekyll serve`. Browse to `http://localhost:4000`.
 
+#### Deploying
+Install and configure [Amazon CLI](http://aws.amazon.com/cli/) first.
+Replace the `BUCKET_NAME` constant in Rakefile with your bucket name.
+Then run `rake deploy` and watch the magic happen!
+
 ### Future Plans For This Site
 Failing to plan is planning to fail!  Here's what to expect:
 
-* Add a rake task to deploy to Amazon S3
+* Add precompiling of assets to deploy rake task
 * Add a generator for new posts and pages
 * Update the front page to look like a web site, have posts on other pages
 * Add some style
