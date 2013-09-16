@@ -1,4 +1,7 @@
 <header>
   <h1 class="title"><a href="/">{{ site.name }}</a></h1>
   <!-- <a class="extra" href="/">home</a> -->
+  {% for page in site.pages %}
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+  {% endfor %}
 </header>

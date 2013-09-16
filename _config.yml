@@ -4,3 +4,4 @@ exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', '.ruby-version', '
 
 markdown: redcarpet
 pygments: true
+permalink: none
