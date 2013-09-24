@@ -1,3 +1,4 @@
+require 'fileutils'
 # Compiles the SCSS stylesheet and builds the site
 
 # Replace this with your bucket name.
@@ -19,6 +20,9 @@ end
 # Compiles SASS files and then compiles the site.
 # TODO Add SASS generation to Jekyll itself instead of running it in a rake task here.
 def build
+  unless File.directory?('css/compiled')
+    FileUtils.mkpath ('css/compiled')
+  end
   system 'sass css/_main.scss:css/compiled/main.css'
   system 'jekyll build'
 end

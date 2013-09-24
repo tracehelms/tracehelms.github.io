@@ -7,23 +7,38 @@
 $total-width: 100%; /* Sets fluid grid */
 
 /* Import Google Fonts */
-@import url(http://fonts.googleapis.com/css?family=Lato|Lobster);
+@import url(http://fonts.googleapis.com/css?family=Vollkorn|Lobster);
 
 /* Import Syntax Highlighting Styles */
 @import '_syntax.scss';
 
 
 /***************************************************************************************** Common */
-p {font-family: 'Lato', sans-serif;}
-.cursive-title {font-family: 'Lobster', cursive;}
+body {font-family: 'Vollkorn', serif;}
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 2.5em;
+}
 
 
 /******************************************************************************************* Home */
-# TODO this doesnt work
+/* TODO this doesnt work */
 .wrap {
   @include column(12);
   margin-left: auto;
   margin-right: auto;
+}
+
+header {
+  @include column(3);
+}
+
+.content {
+  @include column(9);
+}
+
+footer {
+  @include column(12);
 }
 
 /******************************************************************************************* Site */
