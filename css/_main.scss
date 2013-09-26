@@ -14,20 +14,16 @@ $total-width: 100%; /* Sets fluid grid */
 
 
 /***************************************************************************************** Common */
-body {font-family: 'Vollkorn', serif;}
-h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 2.5em;
-}
-
-
-/******************************************************************************************* Home */
-/* TODO this doesnt work */
 * {
   margin: 0;
 }
 html, body {
   height: 100%;
+}
+body {font-family: 'Vollkorn', serif;}
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 2.5em;
 }
 .wrap {
   @include column(12);
@@ -36,29 +32,23 @@ html, body {
   height: 100%;
   margin: 0 auto -80px; /* the bottom margin is the negative value of the footer's height */
 }
-
-header {
-  @include column(3);
-  @include push(1);
-}
-
 .content {
   @include column(7);
   @include push(1);
 }
 
+/***************************************************************************************** Header */
+header {
+  @include column(3);
+  @include push(1);
+}
+
+
+/***************************************************************************************** Footer */
 footer {
   @include column(12);
 }
 footer, .footer-push {
   height: 80px; /* '.push' must be the same height as 'footer' */
 }
-
-/******************************************************************************************* Site */
-/* stuff goes here */
-
-
-/****************************************************************************************** Posts */
-/* stuff goes here */
-
 
