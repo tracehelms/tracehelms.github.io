@@ -1,16 +1,16 @@
 /**************************************************************************************** Imports */
 /* Global Reset */
-@import 'reset.scss';
+@import '_reset.scss';
 
 /* Import The Symantic Grid System */
-@import 'grid.scss';
+@import '_grid.scss';
 $total-width: 100%; /* Sets fluid grid */
 
 /* Import Google Fonts */
 @import url(http://fonts.googleapis.com/css?family=Vollkorn|Lobster);
 
 /* Import Syntax Highlighting Styles */
-@import 'syntax.scss';
+@import '_syntax.scss';
 
 
 /***************************************************************************************** Common */
