@@ -19,7 +19,6 @@ Then run `rake deploy` and watch the magic happen!
 ### Future Plans For This Site
 Failing to plan is planning to fail!  Here's what to expect:
 
-* Add precompiling of assets to deploy rake task
 * Add a generator for new posts and pages
 * Update the front page to look like a web site, have posts on other pages
 * Add some style
