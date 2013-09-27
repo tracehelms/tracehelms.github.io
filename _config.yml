@@ -1,7 +1,10 @@
 url:  http://tracehelms.com
 name: Trace Helms
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', '.ruby-version', '*.scss']
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', '.ruby-version']
 
 markdown: redcarpet
 pygments: true
 permalink: none
+sass:
+  syntax: scss        # scss|sass
+  style:  compressed  # nested|expanded|compact|compressed

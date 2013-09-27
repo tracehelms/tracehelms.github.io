@@ -1,16 +1,16 @@
 /**************************************************************************************** Imports */
 /* Global Reset */
-@import '_reset.scss';
+@import 'reset.scss';
 
 /* Import The Symantic Grid System */
-@import '_grid.scss';
+@import 'grid.scss';
 $total-width: 100%; /* Sets fluid grid */
 
 /* Import Google Fonts */
 @import url(http://fonts.googleapis.com/css?family=Vollkorn|Lobster);
 
 /* Import Syntax Highlighting Styles */
-@import '_syntax.scss';
+@import 'syntax.scss';
 
 
 /***************************************************************************************** Common */
@@ -20,7 +20,10 @@ $total-width: 100%; /* Sets fluid grid */
 html, body {
   height: 100%;
 }
-body {font-family: 'Vollkorn', serif;}
+body {
+  font-family: 'Vollkorn', serif;
+  background: #EBEBEB;
+}
 h1 {
   font-family: 'Lobster', cursive;
   font-size: 2.5em;
