@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Home
+title: Goals
 ---
 
-<div id="home">
-  <h2>Recent Happenings</h2>
+<div class="goals">
+  <h2>Some Modest Gaols</h2>
   <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in site.categories.goals %}
       <section>
         <h3>{{ post.title }}</h3>
         <p>{{ post.date | date_to_string }}</p>

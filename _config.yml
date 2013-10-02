@@ -4,7 +4,7 @@ exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', '.ruby-version']
 
 markdown: redcarpet
 pygments: true
-permalink: none
+permalink: pretty
 sass:
   syntax: scss        # scss|sass
   style:  nested  # nested|expanded|compact|compressed
