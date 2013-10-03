@@ -33,25 +33,32 @@ h1 {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -80px; /* the bottom margin is the negative value of the footer's height */
+  margin: 2% 2% -80px 2%; /* the bottom margin is the negative value of the footer's height */
 }
 .content {
   @include column(7);
-  @include push(1);
+  height: auto;
 }
 
 /***************************************************************************************** Header */
 header {
   @include column(3);
-  @include push(1);
 }
 
+/****************************************************************************************** Posts */
+.post-title {
+  @include column(3);
+  text-align: right;
+}
+.post-content {
+  @include column(9);
+}
 
 /***************************************************************************************** Footer */
 footer {
   @include column(12);
 }
-footer, .footer-push {
+footer, .wrap:after {
   height: 80px; /* '.push' must be the same height as 'footer' */
 }
 
