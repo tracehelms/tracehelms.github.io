@@ -3,6 +3,11 @@ module Jekyll
   class SortedForTag < Liquid::For
     def render(context)
       sorted_collection = context[@collection_name].dup
+      
+      # Added by Trace Helms
+      # Remove pages without the attitribute to sort by from this list
+      sorted_collection.reject! { |i| i.to_liquid[@attributes['sort_by']].nil?  }
+
       sorted_collection.sort_by! { |i| i.to_liquid[@attributes['sort_by']] }
        
       sorted_collection_name = "#{@collection_name}_sorted".sub('.', '_')
