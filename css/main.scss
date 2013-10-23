@@ -11,12 +11,16 @@ p {
   font-size: 1.3em;
 }
 body {
-  font-family: 'Vollkorn', serif;
   background: #EBEBEB;
   margin: 2%;
 }
+h1, h2, h3, h4, h5, h6, p, a, body {
+  font-family: 'Vollkorn', serif;
+}
 .site-title {
-  font-family: 'Lobster', cursive;
+  a {
+    font-family: 'Lobster', cursive;
+  }
 }
 .content {
   margin-top: 4em;
@@ -24,6 +28,11 @@ body {
 
 /***************************************************************************************** Header */
 header {
+  nav {
+    ul {
+      list-style: none;
+    }
+  }
 }
 
 /****************************************************************************************** Posts */
@@ -31,6 +40,7 @@ header {
   text-align: right;
   h1 {
     font-size: 1.5em;
+    font-weight: bold;
     margin-top: 0;
   }
 }
