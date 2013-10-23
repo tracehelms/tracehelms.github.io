@@ -4,17 +4,16 @@ title: Goals
 order: 2
 ---
 
-<div class="goals">
-  <h2>Just A Few Personal Goals</h2>
-  <ul class="posts">
+<section class="goals">
     {% for post in site.categories.goals %}
-      <section>
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.date | date_to_string }}</p>
-        <div class="content">
+      <article class="row">
+        <header class="post-title col-md-3 column">
+          <h1>{{ post.title }}</h1>
+          <p>{{ post.date | date_to_string }}</p>
+        </header>
+        <div class="post-content col-md-9 column">
           {{ post.content }}
         </div>
-      </section>
+      </article>
     {% endfor %}
-  </ul>
-</div>
+</section>

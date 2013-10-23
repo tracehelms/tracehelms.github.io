@@ -1,11 +1,4 @@
 /**************************************************************************************** Imports */
-/* Global Reset */
-@import '_reset.scss';
-
-/* Import The Symantic Grid System */
-@import '_grid.scss';
-$total-width: 100%; /* Sets fluid grid */
-
 /* Import Google Fonts */
 @import url(http://fonts.googleapis.com/css?family=Vollkorn|Lobster);
 
@@ -14,51 +7,37 @@ $total-width: 100%; /* Sets fluid grid */
 
 
 /***************************************************************************************** Common */
-* {
-  margin: 0;
-}
-html, body {
-  height: 100%;
+p {
+  font-size: 1.3em;
 }
 body {
   font-family: 'Vollkorn', serif;
   background: #EBEBEB;
+  margin: 2%;
 }
-h1 {
+.site-title {
   font-family: 'Lobster', cursive;
-  font-size: 2.5em;
-}
-.wrap {
-  @include column(12);
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 2% 2% -80px 2%; /* the bottom margin is the negative value of the footer's height */
 }
 .content {
-  @include column(7);
-  height: auto;
+  margin-top: 4em;
 }
 
 /***************************************************************************************** Header */
 header {
-  @include column(3);
 }
 
 /****************************************************************************************** Posts */
 .post-title {
-  @include column(3);
   text-align: right;
+  h1 {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
 }
 .post-content {
-  @include column(9);
 }
 
 /***************************************************************************************** Footer */
 footer {
-  @include column(12);
-}
-footer, .wrap:after {
-  height: 80px; /* '.push' must be the same height as 'footer' */
 }
 

@@ -7,20 +7,23 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width">
 
+    <!-- Bootstrap 3.0.0 -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
   </head>
 
   <body>
-    <div class="wrap">
+    <div class="row">
 
       {% include header.html %}
 
-      <div class="content">
+      <div class="content col-md-9 column">
         {{ content }}
       </div>
 
-      <div class=".footer-push"></div>
     </div>
     {% include footer.html %}
   </body>

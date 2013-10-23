@@ -4,18 +4,16 @@ title: Home
 order: 0
 ---
 
-<section id="home">
-  <ul class="posts">
+<section class="home">
     {% for post in site.posts %}
-      <section>
-        <div class="post-title">
-          <h2>{{ post.title }}</h2>
+      <article class="row">
+        <header class="post-title col-md-3 column">
+          <h1>{{ post.title }}</h1>
           <p>{{ post.date | date_to_string }}</p>
-        </div>
-        <div class="post-content">
+        </header>
+        <div class="post-content col-md-9 column">
           {{ post.content }}
         </div>
-      </section>
+      </article>
     {% endfor %}
-  </ul>
 </section>
