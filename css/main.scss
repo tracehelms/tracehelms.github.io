@@ -10,9 +10,15 @@
 p {
   font-size: 1.3em;
 }
-body {
+html, body {
+  height: 100%;
   background: #EBEBEB;
-  margin: 2%;
+}
+.wrap {
+  min-height: 100%;
+  height: auto !important;
+  margin: 0 1% -110px 1%;
+  padding: 0px 0px 100px;
 }
 h1, h2, h3, h4, h5, h6, p, a, body {
   font-family: 'Vollkorn', serif;
@@ -48,6 +54,14 @@ header {
 }
 
 /***************************************************************************************** Footer */
-footer {
+.footer {
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  ul {
+    list-style: none;
+    font-size: 1.2em;
+    padding: 0;
+  }
 }
 

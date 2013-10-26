@@ -9,7 +9,7 @@ order: 2
       <article class="row">
         <header class="post-title col-md-3 column">
           <h1>{{ post.title }}</h1>
-          <p>{{ post.date | date_to_string }}</p>
+          <p>{{ post.date | date: "%Y %B %d" }}</p>
         </header>
         <div class="post-content col-md-9 column">
           {{ post.content }}
