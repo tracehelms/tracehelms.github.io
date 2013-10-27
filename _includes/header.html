@@ -1,6 +1,11 @@
 <header class="col-md-3 column">
   <h1 class="site-title"><a href="/">{{ site.name }}</a></h1>
-  <nav>
+  <ul class="contact">
+    <li>Software Engineer at <a href="http://corp.izea.com">IZEA</a></li>
+    <li><a href="https://github.com/tracehelms"><i class="fa fa-github fa-lg fa-fw"></i>github.com/tracehelms</a><br /></li>
+    <li><a href="https://twitter.com/tracehelms"><i class="fa fa-twitter fa-lg fa-fw"></i>twitter.com/tracehelms</a><br /></li>
+  </ul>
+  <nav class="site-nav">
     <ul>
       {% sorted_for page in site.pages sort_by:order %}
         <li><a href="{{ page.url }}">{{ page.title }}</a></li>

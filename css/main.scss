@@ -39,6 +39,11 @@ header {
       list-style: none;
     }
   }
+  .contact {
+    list-style: none;
+    font-size: 1.1em;
+    padding: 0;
+  }
 }
 
 /****************************************************************************************** Posts */
@@ -52,16 +57,3 @@ header {
 }
 .post-content {
 }
-
-/***************************************************************************************** Footer */
-.footer {
-  height: 100px;
-  margin: 0;
-  padding: 0;
-  ul {
-    list-style: none;
-    font-size: 1.2em;
-    padding: 0;
-  }
-}
-
