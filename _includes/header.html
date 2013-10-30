@@ -1,15 +1,22 @@
 <header class="col-md-3 column">
-  <h1 class="site-title"><a href="/">{{ site.name }}</a></h1>
+  <div class="header-wrap">
+    <h1 class="site-title"><a href="/">{{ site.name }}</a></h1>
+    <nav class="site-nav">
+      <ul>
+        {% sorted_for page in site.pages sort_by:order %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endsorted_for %}
+      </ul>
+    </nav>
+    <div class="contact-push"></div>
+  </div>
+
   <ul class="contact">
-    <li>Software Engineer at <a href="http://corp.izea.com" target="_blank">IZEA</a></li>
-    <li><a href="https://github.com/tracehelms" target="_blank"><i class="fa fa-github fa-lg fa-fw"></i>github.com/tracehelms</a><br /></li>
-    <li><a href="https://twitter.com/tracehelms" target="_blank"><i class="fa fa-twitter fa-lg fa-fw"></i>twitter.com/tracehelms</a><br /></li>
+    <li>
+      <a href="http://github.com/tracehelms" target="_blank"><i class="fa fa-github fa-2x fa-fw"></i></a>
+      <a href="http://linkedin.com/in/tracehelms" target="_blank"><i class="fa fa-linkedin-square fa-2x fa-fw"></i></a>
+      <a href="http://twitter.com/tracehelms" target="_blank"><i class="fa fa-twitter fa-2x fa-fw"></i></a>
+    </li>
+    <li><small><em>Software Engineer at <a href="http://corp.izea.com" target="_blank">IZEA</a></em></small></li>
   </ul>
-  <nav class="site-nav">
-    <ul>
-      {% sorted_for page in site.pages sort_by:order %}
-        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-      {% endsorted_for %}
-    </ul>
-  </nav>
 </header>
