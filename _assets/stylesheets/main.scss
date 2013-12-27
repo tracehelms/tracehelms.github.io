@@ -9,7 +9,7 @@
 @import '_reset.scss';
 @import '_syntax.scss';
 
-/********************************************************************* Common */
+/******************************************************************** Desktop */
 @media screen and (min-width: 800px) {
 html, body {
   @include outer-container;
@@ -32,7 +32,6 @@ a { text-decoration: none; }
 }
 .content { margin-top: 4%; }
 
-/********************************************************************* Header */
 .main-header {
   @include span-columns(3);
   height: 100%;
@@ -59,12 +58,16 @@ a { text-decoration: none; }
   }
 }
 
-/********************************************************************** Posts */
-.post {
+article {
+  @include span-columns(8);
+  margin-bottom: 2em;
   margin-top: 1%;
 }
+.post {
+  // margin-top: 1%;
+}
 .post-title {
-  @include span-columns(2);
+  @include span-columns(2 of 8);
   text-align: right;
   h1 {
     font-size: 1.4em;
@@ -73,9 +76,9 @@ a { text-decoration: none; }
   }
 }
 .post-content {
-  @include span-columns(7);
+  @include span-columns(6 of 8);
 }
-} /* end screen */
+}
 
 /********************************************************************* Mobile */
 @media screen and (max-width: 799px) {
