@@ -1,0 +1,128 @@
+/******************************************************************** Imports */
+@import "bourbon";
+@import "neat";
+
+/* Import Google Fonts */
+@import url(http://fonts.googleapis.com/css?family=Vollkorn|Lobster);
+
+/* Import Syntax Highlighting Styles */
+@import '_reset.scss';
+@import '_syntax.scss';
+
+/********************************************************************* Common */
+@media screen and (min-width: 800px) {
+html, body {
+  @include outer-container;
+  max-width: 98%;
+  height: 100%;
+  padding-top: 1%;
+  background: #EBEBEB;
+  font-size: 1.05em;
+}
+h1, h2, h3, h4, h5, h6, p, a, body { font-family: 'Vollkorn', serif; }
+h1 { font-size: 2.0em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4, h5, h6 { font-size: 1.4em; }
+em { font-style: italic; }
+a { text-decoration: none; }
+.text-small { font-size: 0.85em; }
+.site-title {
+  a { font-family: 'Lobster', cursive; }
+}
+.content { margin-top: 4%; }
+
+/********************************************************************* Header */
+.main-header {
+  @include span-columns(3);
+  height: 100%;
+  min-height: 100%;
+  .main-nav {
+    min-height: 100%;
+    height: 100% !important;
+    margin: 0 auto -100px;
+  }
+  nav {
+    .nav-icon{
+      display: none;
+    }
+    ul {
+      display: block !important;
+      list-style: none;
+      .nav-pages {
+        margin-left: 2em;
+      }
+    .contact {
+      margin-top: 2em;
+    }
+    }
+  }
+}
+
+/********************************************************************** Posts */
+.post {
+  margin-top: 1%;
+}
+.post-title {
+  @include span-columns(2);
+  text-align: right;
+  h1 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 0;
+  }
+}
+.post-content {
+  @include span-columns(7);
+}
+} /* end screen */
+
+/********************************************************************* Mobile */
+@media screen and (max-width: 799px) {
+html, body {
+  @include outer-container;
+  height: 100%;
+  background: #EBEBEB;
+}
+h1, h2, h3, h4, h5, h6, p, a, body { font-family: 'Vollkorn', serif; }
+h1 { font-size: 2.0em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4, h5, h6 { font-size: 1.4em; }
+em { font-style: italic; }
+a { text-decoration: none; }
+.text-small { font-size: 0.85em; }
+.site-title {
+  a { font-family: 'Lobster', cursive; }
+}
+.main-header {
+  // background-color: #ababab;
+  min-height: 2em;
+  .site-title {
+  }
+  nav {
+    width: 100%;
+    .nav-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+    }
+    ul {
+      text-align: center;
+      width: 100%;
+    }
+  }
+  nav ul, nav:active ul {
+    display: none;
+  }
+  nav:hover ul, nav:hover li {
+    // display: block;
+  }
+}
+.main-header:after { clear: both; }
+article header {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+}

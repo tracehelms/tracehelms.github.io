@@ -5,12 +5,12 @@ title: Home
 
 <section class="home">
     {% for post in site.posts %}
-      <article class="row">
-        <header class="post-title col-md-3 column">
+      <article class="post">
+        <header class="post-title">
           <h1>{{ post.title }}</h1>
           <p>{{ post.date | date: "%Y %B %d" }}</p>
         </header>
-        <div class="post-content col-md-9 column">
+        <div class="post-content">
           {{ post.content }}
         </div>
       </article>

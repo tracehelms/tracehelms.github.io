@@ -1,22 +1,23 @@
-<header class="main-header col-md-3 column">
-  <div class="header-wrap">
+<header class="main-header">
+  <section class="main-nav">
     <h1 class="site-title"><a href="/">{{ site.name }}</a></h1>
-    <nav class="site-nav">
-      <ul>
-        {% sorted_for page in site.pages sort_by:order %}
-          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-        {% endsorted_for %}
+    <nav>
+      <i class="nav-icon fa fa-bars fa-2x fa-fw" id="nav-icon"></i>
+      <ul id="nav-menu">
+        <div class="nav-pages">
+          {% sorted_for page in site.pages sort_by:order %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+          {% endsorted_for %}
+        </div>
+        <div class="contact">
+          <li>
+            <a href="http://github.com/tracehelms" target="_blank"><i class="fa fa-github fa-2x fa-fw"></i></a>
+            <a href="http://linkedin.com/in/tracehelms" target="_blank"><i class="fa fa-linkedin-square fa-2x fa-fw"></i></a>
+            <a href="http://twitter.com/tracehelms" target="_blank"><i class="fa fa-twitter fa-2x fa-fw"></i></a>
+          </li>
+          <li class="text-small"><em>Software Engineer at <a href="http://corp.izea.com" target="_blank">IZEA</a></em></li>
+        </div>
       </ul>
     </nav>
-    <div class="contact-push"></div>
-  </div>
-
-  <ul class="contact">
-    <li>
-      <a href="http://github.com/tracehelms" target="_blank"><i class="fa fa-github fa-2x fa-fw"></i></a>
-      <a href="http://linkedin.com/in/tracehelms" target="_blank"><i class="fa fa-linkedin-square fa-2x fa-fw"></i></a>
-      <a href="http://twitter.com/tracehelms" target="_blank"><i class="fa fa-twitter fa-2x fa-fw"></i></a>
-    </li>
-    <li><small><em>Software Engineer at <a href="http://corp.izea.com" target="_blank">IZEA</a></em></small></li>
-  </ul>
+  </section>
 </header>
