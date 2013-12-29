@@ -40,8 +40,8 @@ a {
 }
 p { margin: $paragraph-space 0 $paragraph-space 0; }
 ul {
-  margin: $paragraph-space 0 $paragraph-space 1.5em;
-  list-style: disc inside;
+  margin: $paragraph-space 0 $paragraph-space 2em;
+  list-style: disc outside;
 }
 .text-small { font-size: 0.7em; }
 .main-header {
