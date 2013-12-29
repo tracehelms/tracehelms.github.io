@@ -5,8 +5,8 @@
       <i class="nav-icon fa fa-bars fa-2x fa-fw" id="nav-icon"></i>
       <ul id="nav-menu">
         <div class="nav-pages">
-          {% sorted_for page in site.pages sort_by:order %}
-            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+          {% sorted_for item in site.pages sort_by:order %}
+            <li class="{% if item.url == page.url %}current{% endif %}"><a href="{{ item.url }}">{{ item.title }}</a></li>
           {% endsorted_for %}
         </div>
         <div class="contact">

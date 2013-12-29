@@ -9,37 +9,54 @@
 @import '_reset.scss';
 @import '_syntax.scss';
 
+
+/* Variables */
+$light-blue-color: #4FB7E3;
+$dark-blue-color: #063E53;
+$light-white-color: #F6F6F6;
+$light-red-color: #E7512D;
+$paragraph-space: 0.5em;
+
 /******************************************************************** Desktop */
 @media screen and (min-width: 800px) {
 html, body {
   @include outer-container;
+  background: url(asset_path('noisy-texture-8.png'));
   max-width: 98%;
   height: 100%;
   padding-top: 1%;
-  background: #EBEBEB;
-  font-size: 1.05em;
+  font-size: 1.1em;
+  color: $dark-blue-color;
 }
 h1, h2, h3, h4, h5, h6, p, a, body { font-family: 'Vollkorn', serif; }
-h1 { font-size: 2.0em; }
-h2 { font-size: 1.8em; }
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.7em; }
 h3 { font-size: 1.6em; }
 h4, h5, h6 { font-size: 1.4em; }
 em { font-style: italic; }
-a { text-decoration: none; }
-.text-small { font-size: 0.85em; }
-.site-title {
-  a { font-family: 'Lobster', cursive; }
+a {
+  text-decoration: none;
+  color: $light-blue-color;
 }
-.content { margin-top: 4%; }
-
+p { margin: $paragraph-space 0 $paragraph-space 0; }
+ul {
+  margin: $paragraph-space 0 $paragraph-space 1.5em;
+  list-style: disc inside;
+}
+.text-small { font-size: 0.7em; }
 .main-header {
   @include span-columns(3);
-  height: 100%;
-  min-height: 100%;
-  .main-nav {
-    min-height: 100%;
-    height: 100% !important;
-    margin: 0 auto -100px;
+  background: $light-white-color;
+  padding: 1em 0 1em 0;
+  float: left;
+  max-width: 220px;
+  min-height: 96%;
+  .site-title {
+    text-align: center;
+    a {
+      font-family: 'Lobster', cursive;
+      color: $light-red-color;
+    }
   }
   nav {
     .nav-icon{
@@ -48,35 +65,41 @@ a { text-decoration: none; }
     ul {
       display: block !important;
       list-style: none;
-      .nav-pages {
-        margin-left: 2em;
+      margin-left: 0;
+      .nav-pages { margin-left: 2em; }
+      .contact {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 3em;
+        text-align: center;
+        @include span-columns(3);
+        max-width: 220px;
       }
-    .contact {
-      margin-top: 2em;
-    }
     }
   }
 }
-
+.content { margin-top: 4%; }
 article {
-  @include span-columns(8);
+  @include span-columns(9);
   margin-bottom: 2em;
   margin-top: 1%;
-}
-.post {
-  // margin-top: 1%;
-}
-.post-title {
-  @include span-columns(2 of 8);
-  text-align: right;
-  h1 {
-    font-size: 1.4em;
-    font-weight: bold;
-    margin-top: 0;
+  margin-right: 0;
+  header {
+    @include span-columns(2 of 9);
+    text-align: right;
+    h1 {
+      color: $light-red-color;
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-top: 0;
+    }
+    p { margin-top: 0; }
   }
 }
 .post-content {
-  @include span-columns(6 of 8);
+  @include span-columns(7 of 9);
+  background: $light-white-color;
+  padding: 0.5em;
 }
 }
 
@@ -85,7 +108,9 @@ article {
 html, body {
   @include outer-container;
   height: 100%;
-  background: #EBEBEB;
+  background: url(asset_path('noisy-texture-8.png'));
+  font-size: 1.05em;
+  color: $dark-blue-color;
 }
 h1, h2, h3, h4, h5, h6, p, a, body { font-family: 'Vollkorn', serif; }
 h1 { font-size: 2.0em; }
@@ -93,25 +118,39 @@ h2 { font-size: 1.8em; }
 h3 { font-size: 1.6em; }
 h4, h5, h6 { font-size: 1.4em; }
 em { font-style: italic; }
-a { text-decoration: none; }
-.text-small { font-size: 0.85em; }
-.site-title {
-  a { font-family: 'Lobster', cursive; }
+a {
+  text-decoration: none;
+  color: $light-blue-color;
 }
+p { margin: $paragraph-space 0 $paragraph-space 0; }
+ul {
+  margin: $paragraph-space 0 $paragraph-space 1.5em;
+  list-style: disc inside;
+}
+.text-small { font-size: 0.7em; }
+.text-small { font-size: 0.85em; }
 .main-header {
-  // background-color: #ababab;
+  background: $light-white-color;
   min-height: 2em;
   .site-title {
+    text-align: center;
+    a {
+      font-family: 'Lobster', cursive;
+      color: $light-red-color;
+    }
   }
   nav {
     width: 100%;
     .nav-icon {
+      color: $dark-blue-color;
       position: absolute;
       top: 0;
       right: 0;
       display: inline-block;
     }
     ul {
+      list-style: none;
+      margin-left: 0;
       text-align: center;
       width: 100%;
     }
@@ -127,5 +166,17 @@ a { text-decoration: none; }
 article header {
   margin-top: 1.5em;
   margin-bottom: 1em;
+  h1 {
+    color: $light-red-color;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    margin-top: 0;
+  }
+}
+.post-content {
+  background: $light-white-color;
+  padding: 0.5em;
 }
 }
