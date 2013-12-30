@@ -24,7 +24,7 @@ html, body {
   background: url(asset_path('noisy-texture-8.png'));
   max-width: 98%;
   height: 100%;
-  padding-top: 1%;
+  // padding-top: 1%;
   font-size: 1.1em;
   color: $dark-blue-color;
 }
@@ -50,7 +50,7 @@ ul {
   padding: 1em 0 1em 0;
   float: left;
   max-width: 220px;
-  min-height: 96%;
+  min-height: 100%;
   .site-title {
     text-align: center;
     a {
@@ -70,7 +70,7 @@ ul {
       .contact {
         position: absolute;
         bottom: 0;
-        margin-bottom: 3em;
+        margin-bottom: 1.5em;
         text-align: center;
         @include span-columns(3);
         max-width: 220px;
@@ -158,21 +158,22 @@ ul {
   nav ul, nav:active ul {
     display: none;
   }
-  nav:hover ul, nav:hover li {
-    // display: block;
-  }
 }
 .main-header:after { clear: both; }
-article header {
-  margin-top: 1.5em;
-  margin-bottom: 1em;
-  h1 {
-    color: $light-red-color;
-    text-align: center;
-  }
-  p {
-    text-align: center;
-    margin-top: 0;
+article {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  header {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    h1 {
+      color: $light-red-color;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      margin-top: 0;
+    }
   }
 }
 .post-content {
