@@ -20,11 +20,10 @@ Then run `rake deploy` and watch the magic happen!
 Failing to plan is planning to fail!  Here's what to expect:
 
 * Add a generator for new posts and pages
-* Update the front page to look like a web site, have posts on other pages
-* Add some style
-* Add a page with current goals
-* Add a page to keep a training log
-* Add a page linking to pet code projects
+* Add a page linking to code projects
+* Add a page for recent GitHub activity (pulled from GitHub)
+* Try to minimalize the style
+* Add Disqus comments
 
 ### Technologies (thanks!)
 
