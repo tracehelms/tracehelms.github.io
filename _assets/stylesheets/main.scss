@@ -75,6 +75,10 @@ ul {
         margin-top: 4em;
       }
     }
+    .portrait {
+      width: 110px;
+      height: 110px;
+    }
   }
 }
 .content {
@@ -88,6 +92,7 @@ article {
   header {
     @include span-columns(2 of 9);
     text-align: right;
+    margin-top: 0.9em;
     h1 {
       color: $light-red-color;
       font-size: 1.4em;
@@ -170,6 +175,10 @@ ul {
       margin-left: 0;
       text-align: center;
       width: 100%;
+    }
+    .portrait {
+      width: 80px;
+      height: 80px;
     }
   }
   nav ul, nav:active ul {

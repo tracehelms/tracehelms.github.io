@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coming Along Nicely"
+title:  Coming Along
 date:   2014-01-11 14:44:00
 categories: ramblings
 ---
