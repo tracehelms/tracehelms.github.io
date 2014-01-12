@@ -11,27 +11,29 @@
 
 
 /* Variables */
+$black-color: #111111;
 $light-blue-color: #4FB7E3;
-$dark-blue-color: #063E53;
 $light-white-color: #F6F6F6;
 $light-red-color: #E7512D;
 $paragraph-space: 0.5em;
+$background: #dfdfdf;
 
 /******************************************************************** Desktop */
 @media screen and (min-width: 800px) {
 html, body {
   @include outer-container;
-  background: url(asset_path('noisy-texture-8.png'));
+  background: url(asset_path('noisy-texture-dfdfdf.png'));
   max-width: 98%;
   height: 100%;
-  font-size: 1.1em;
-  color: $dark-blue-color;
+  font-size: 1.0em;
+  color: $black-color;
+  line-height: 1.5em;
 }
-h1, h2, h3, h4, h5, h6, p, a, body { font-family: 'Ubuntu', sans-serif; line-height: 120%; }
-h1 { font-size: 1.8em; }
-h2 { font-size: 1.7em; }
-h3 { font-size: 1.6em; }
-h4, h5, h6 { font-size: 1.4em; }
+h1, h2, h3, h4, h5, h6, p, a, body { font-family: 'Ubuntu', sans-serif;}
+h1 { font-size: 1.6em; font-weight: bold; }
+h2 { font-size: 1.5em; font-weight: bold; }
+h3 { font-size: 1.4em; font-weight: bold; }
+h4, h5, h6 { font-size: 1.2em; font-weight: bold; }
 em { font-style: italic; }
 a {
   text-decoration: none;
@@ -49,9 +51,11 @@ ul {
   padding: 1em 0 1em 0;
   float: left;
   max-width: 220px;
-  min-height: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   .site-title {
     text-align: center;
+    font-size: 2em;
     a {
       font-family: 'Lobster', cursive;
       color: $light-red-color;
@@ -67,21 +71,19 @@ ul {
       margin-left: 0;
       .nav-pages { margin-left: 2em; }
       .contact {
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 1.5em;
         text-align: center;
-        @include span-columns(3);
-        max-width: 220px;
+        margin-top: 4em;
       }
     }
   }
 }
-.content { margin-top: 4%; }
-article {
+.content {
   @include span-columns(9);
-  margin-bottom: 2em;
-  margin-top: 1%;
+  margin-top: 4%;
+}
+article {
+  @include span-columns(9 of 9);
+  margin-bottom: 3em;
   margin-right: 0;
   header {
     @include span-columns(2 of 9);
@@ -95,11 +97,23 @@ article {
     }
     p { margin-top: 0; }
   }
+  h1, h2, h3, h4, h5, h6 { margin-top: 1em; }
 }
 .post-content {
   @include span-columns(7 of 9);
   background: $light-white-color;
+  border-radius: 10px;
   padding: 0.5em;
+  .highlighttable {
+    padding: 0 0.5em;
+    width: 100%;
+    .linenos {
+      background-color: $light-white-color;
+    }
+    .hightlight {
+      border-radius: 5px;
+    }
+  }
 }
 }
 
@@ -108,15 +122,16 @@ article {
 html, body {
   @include outer-container;
   height: 100%;
-  background: url(asset_path('noisy-texture-8.png'));
-  font-size: 1.05em;
-  color: $dark-blue-color;
+  background: url(asset_path('noisy-texture-dfdfdf.png'));
+  font-size: 1.0em;
+  color: $black-color;
+  line-height: 1.5em;
 }
 h1, h2, h3, h4, h5, h6, p, a, body { font-family: 'Ubuntu', sans-serif; }
-h1 { font-size: 2.0em; }
-h2 { font-size: 1.8em; }
-h3 { font-size: 1.6em; }
-h4, h5, h6 { font-size: 1.4em; }
+h1 { font-size: 1.6em; font-weight: bold; }
+h2 { font-size: 1.5em; font-weight: bold; }
+h3 { font-size: 1.4em; font-weight: bold; }
+h4, h5, h6 { font-size: 1.2em; font-weight: bold; }
 em { font-style: italic; }
 a {
   text-decoration: none;
@@ -132,8 +147,10 @@ ul {
 .main-header {
   background: $light-white-color;
   min-height: 2em;
+  padding-top: 0.2em;
   .site-title {
     text-align: center;
+    font-size: 2.0em;
     a {
       font-family: 'Lobster', cursive;
       color: $light-red-color;
@@ -142,7 +159,7 @@ ul {
   nav {
     width: 100%;
     .nav-icon {
-      color: $dark-blue-color;
+      color: $black-color;
       position: absolute;
       top: 0;
       right: 0;
@@ -176,9 +193,15 @@ article {
       margin-top: 0;
     }
   }
+  .highlighttable {
+    padding: 0 0.5em;
+    border-radius: 5px;
+    word-wrap: break-word;
+  }
 }
 .post-content {
   background: $light-white-color;
   padding: 0.5em;
+  border-radius: 10px;
 }
 }
