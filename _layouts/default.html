@@ -8,15 +8,20 @@
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="{% asset_path favicon.ico %}">
 
-    <!-- jQuery 1.10.2 -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
     <!-- Font Awesome 4.0 -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     {% stylesheet main %}
+    <link type="text/css" href="/non_pipelined_assets/jplayer/jplayer.blue.monday.css" rel="stylesheet" />
+
+    <!-- jQuery 1.10.2 -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/non_pipelined_assets/jplayer/jquery.jplayer.min.js"></script>
+
+    <!-- Custom JS -->
     {% javascript main %}
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
