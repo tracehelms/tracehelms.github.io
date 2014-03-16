@@ -13,8 +13,8 @@ end
 task :deploy do
   build
   system "aws s3 rm s3://#{BUCKET_NAME}/_backup/ --recursive"
-  system "aws s3 mv s3://#{BUCKET_NAME}/ s3://#{BUCKET_NAME}/_backup/ --recursive"
-  system "aws s3 sync _site s3://#{BUCKET_NAME} --exclude *_backup/* --exclude *data/*"
+  system "aws s3 mv s3://#{BUCKET_NAME}/ s3://#{BUCKET_NAME}/_backup/ --recursive --exclude data/*"
+  system "aws s3 sync _site s3://#{BUCKET_NAME} --exclude *_backup/* --exclude data/*"
 end
 
 # Compiles SASS files and then compiles the site.
