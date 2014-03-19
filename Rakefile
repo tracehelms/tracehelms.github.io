@@ -12,8 +12,6 @@ end
 # Existing site is backed up in the _backup directory on S3.
 task :deploy do
   build
-  system "aws s3 rm s3://#{BUCKET_NAME}/_backup/ --recursive"
-  # system "aws s3 mv s3://#{BUCKET_NAME}/ s3://#{BUCKET_NAME}/_backup/ --recursive --exclude 's3://#{BUCKET_NAME}/data/*'"
   system "aws s3 sync _site s3://#{BUCKET_NAME} --exclude *data/*"
 end
 
