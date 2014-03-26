@@ -25,7 +25,7 @@ pay about $0.50 per month to host this site.
 Having to deploy the entire site each time is a bit of a hassle, but I've written a nice little
 Rake task to do it for me.
 
-{% highlight ruby linenos=table %}
+{% highlight ruby %}
 # Replace this with your bucket name.
 BUCKET_NAME = 'tracehelms.com'
 
