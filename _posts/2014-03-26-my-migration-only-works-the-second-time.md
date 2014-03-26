@@ -38,7 +38,7 @@ prevents Rails from immediately updating the cache of columns on that table.
 
 So when we go to update that model in the next migration, Rails thinks the `is_banana` column doesn't exist, giving you an `unknown attribute is_banana` error. When you run the migration a second time, Rails gets a chance to update the cache and it succeeds.
 
-To fix it, we can use the method [reset_column_information](http://apidock.com/rails/ActiveRecord/ModelSchema/ClassMethods/reset_column_information).
+To fix it, we can use the method [`reset_column_information`](http://apidock.com/rails/ActiveRecord/ModelSchema/ClassMethods/reset_column_information).
 Let's see it in use:
 
 {% highlight ruby %}
