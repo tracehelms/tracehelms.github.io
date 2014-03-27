@@ -9,10 +9,10 @@ You want to write a Rails 3.2 migration that also transforms some data, you say?
 
 {% highlight ruby %}
   def up
-    add_column :fruits, :is_banana, :boolean
-    Fruit.where(name: "banana").each do |f|
-      f.update_attributes(is_banana: true)
-    end
+      add_column :fruits, :is_banana, :boolean
+      Fruit.where(name: "banana").each do |f|
+          f.update_attributes(is_banana: true)
+      end
   end
 {% endhighlight %}
 
@@ -20,7 +20,7 @@ And you would think this is correct. It looks very correct, indeed. But let's su
 
 {% highlight ruby %}
   def up
-    Fruit.create(name: "Apple", is_banana: false)
+      Fruit.create(name: "Apple", is_banana: false)
   end
 {% endhighlight %}
 
@@ -43,11 +43,11 @@ Let's see it in use:
 
 {% highlight ruby %}
   def up
-    add_column :fruits, :is_banana, :boolean
-    Fruit.reset_column_information
-    Fruit.where(name: "banana").each do |f|
-      f.update_attributes(is_banana: true)
-    end
+      add_column :fruits, :is_banana, :boolean
+      Fruit.reset_column_information
+      Fruit.where(name: "banana").each do |f|
+          f.update_attributes(is_banana: true)
+      end
   end
 {% endhighlight %}
 
