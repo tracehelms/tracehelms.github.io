@@ -1,3 +1,6 @@
+---
+---
+
 /******************************************************************** Imports */
 @import "bourbon";
 @import "neat";
@@ -6,8 +9,8 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu|Lobster);
 
 /* Import Syntax Highlighting Styles */
-@import '_reset.scss';
-@import '_syntax.scss';
+@import 'reset.scss';
+@import 'syntax.scss';
 
 /* Variables */
 $black-color: #111111;
@@ -21,7 +24,7 @@ $background: #dfdfdf;
 @media screen and (min-width: 800px) {
 html, body {
   @include outer-container;
-  background: url(asset_path('noisy-texture-dfdfdf.png'));
+  background: url('/assets/images/noisy-texture-dfdfdf.png');
   max-width: 98%;
   height: 100%;
   font-size: 1.0em;
@@ -142,7 +145,7 @@ article {
 html, body {
   @include outer-container;
   height: 100%;
-  background: url(asset_path('noisy-texture-dfdfdf.png'));
+  background: url('assets/images/noisy-texture-dfdfdf.png');
   font-size: 1.0em;
   color: $black-color;
   line-height: 1.5em;

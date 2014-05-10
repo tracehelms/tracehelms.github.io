@@ -3,8 +3,9 @@ name: Trace Helms
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', '.ruby-version']
 
 markdown: redcarpet
-pygments: true
+# pygments: true
 permalink: pretty
 sass:
+  sass_dir: assets/css
+  style:  compressed  # nested|expanded|compact|compressed
   syntax: scss        # scss|sass
-  style:  nested  # nested|expanded|compact|compressed
