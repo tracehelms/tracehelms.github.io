@@ -32,10 +32,10 @@ BUCKET_NAME = 'tracehelms.com'
 # Builds the site with Jekyll and then deploys to the S3 bucket.
 # Existing site is backed up in the _backup directory on S3.
 task :deploy do
-    system 'jekyll build'
-    system "aws s3 rm s3://#{BUCKET_NAME}/_backup/ --recursive"
-    system "aws s3 mv s3://#{BUCKET_NAME}/ s3://#{BUCKET_NAME}/_backup/ --recursive"
-    system "aws s3 sync _site s3://#{BUCKET_NAME} --exclude *_backup/*"
+  system 'jekyll build'
+  system "aws s3 rm s3://#{BUCKET_NAME}/_backup/ --recursive"
+  system "aws s3 mv s3://#{BUCKET_NAME}/ s3://#{BUCKET_NAME}/_backup/ --recursive"
+  system "aws s3 sync _site s3://#{BUCKET_NAME} --exclude *_backup/*"
 end
 {% endhighlight %}
 
