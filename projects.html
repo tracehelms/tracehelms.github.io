@@ -1,0 +1,19 @@
+---
+layout: default
+title: Projects
+order: 2
+---
+
+<section class="projects">
+  {% sorted_for project in site.projects sort_by:order %}
+    <article class="project">
+      <header>
+        <h1 class="post-title"><a href="{{ project.project_url }}" target="_blank">{{ project.title }}</a></h1>
+        <p class="post-date">Started: {{ project.started }}</p>
+      </header>
+      <div class="project-content">
+        {{ project.content }}
+      </div>
+    </article>
+  {% endsorted_for %}
+</section>
