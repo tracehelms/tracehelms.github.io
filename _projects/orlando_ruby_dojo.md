@@ -4,6 +4,7 @@ title:  Orlando Ruby Dojo
 project_url: https://github.com/orlandorubydojo
 order: 1
 started: December 2013
+ended: July 2014
 ---
 
 <p>I love learning and I love helping other people learn. That's why I started the Orlando Ruby Dojo.</p>
