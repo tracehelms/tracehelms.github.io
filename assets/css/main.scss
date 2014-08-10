@@ -90,6 +90,23 @@ article{
 .highlight{
   overflow: auto;
 }
+blockquote {
+  background: $code-background;
+  border-left: 10px solid $accent;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D";
+}
+blockquote:before {
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
 
 /******************************************************************** Desktop */
 @media screen and (min-width: 800px) {
