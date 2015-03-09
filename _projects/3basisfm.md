@@ -2,7 +2,6 @@
 layout: post
 title:  basis.fm
 project_url: http://basis.fm
-order: 3
 started: October 2014
 ended: Current
 ---

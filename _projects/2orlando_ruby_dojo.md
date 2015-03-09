@@ -2,7 +2,6 @@
 layout: post
 title:  Orlando Ruby Dojo
 project_url: https://github.com/orlandorubydojo
-order: 2
 started: December 2013
 ended: July 2014
 ---

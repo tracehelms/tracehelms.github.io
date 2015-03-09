@@ -5,9 +5,9 @@
       <i class="nav-icon fa fa-bars fa-2x fa-fw" id="nav-icon"></i>
       <ul id="nav-menu">
         <div class="nav-pages">
-          {% sorted_for item in site.pages sort_by:order %}
-            <li class="{% if item.url == page.url %}current{% endif %}"><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endsorted_for %}
+          <li><a href="/post-list">Post List</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/about">About</a></li>
         </div>
         <div class="contact">
           <li><a href="/about/"><img src="/assets/images/trace-head.jpg" alt="Trace Helms" class="portrait"></a></li>
