@@ -2,7 +2,7 @@
 layout: post
 title:  IZEA.com
 project_url: https://izea.com
-order: 2
+order: 1
 started: June 2013
 ended: July 2014
 ---
