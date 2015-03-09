@@ -161,6 +161,9 @@ article {
       border-radius: 5px;
     }
   }
+  .baron {
+    max-width: 450px;
+  }
 }
 }
 
@@ -198,6 +201,9 @@ article {
     padding: 0 0.5em;
     border-radius: 5px;
     word-wrap: break-word;
+  }
+  .baron {
+    max-width: 100%;
   }
 }
 .post-listing {
