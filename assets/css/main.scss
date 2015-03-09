@@ -169,6 +169,10 @@ article {
 
 /********************************************************************* Mobile */
 @media screen and (max-width: 799px) {
+html, body {
+  width: 100%;
+  margin: 0;
+}
 .main-header {
   .site-title{
     line-height: 0.9;
