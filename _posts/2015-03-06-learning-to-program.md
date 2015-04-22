@@ -27,4 +27,4 @@ These practice problems are awesome for beginning to learn a language, but you e
 * Something that keeps track of books you have and haven't read and emails you suggestions
 * A note taking app
 
-In short, just think of something that sounds fun, sounds similar what your goal for learning the language is (i.e. easier versions of future programs you want to write), and doesn't sound **too** hard. You're a programmer and the technology playing field is constantly moving. You've got to push yourself to keep up. You don't want to the the guy who goes into an interview [and can't write a program](http://blog.codinghorror.com/why-cant-programmers-program/).
+In short, just think of something that sounds fun, sounds similar what your goal for learning the language is (i.e. easier versions of future programs you want to write), and doesn't sound **too** hard. You're a programmer and the technology playing field is constantly moving. You've got to push yourself to keep up. You don't want to be the guy who goes into an interview [and can't write a program](http://blog.codinghorror.com/why-cant-programmers-program/).
