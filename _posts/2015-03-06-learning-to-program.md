@@ -5,7 +5,7 @@ date:   2015-03-06 12:00:00
 categories: posts
 ---
 
-<blockquote>If you're learning to program, you should be programming. -<a href="http://www.cprogramming.com/how_to_learn_anything.html" target="_blank">Alex Allain</a></blockquote>
+<blockquote>If you're learning to program, you should be programming. - <a href="http://www.cprogramming.com/how_to_learn_anything.html">Alex Allain</a></blockquote>
 
 Recently I've been learning [Golang](http://golang.org). It's a cool little language, seems very powerful, but I haven't used it in production yet. There's something about learning a new technology that just seems to push you. Learning how to do things in other languages, or even in the same language but a different way, broadens your horizons and adds another tool to your toolbelt. (Besides your golden hammer, which is the best tool ever.)
 

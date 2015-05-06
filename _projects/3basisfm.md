@@ -10,4 +10,4 @@ ended: Current
 
 <p>This site is actively being developed and has not been officially released yet. At the time of writing, we had just started converting the application from a monolithic Rails app to a Rails API / Ember.js front end.</p>
 
-<p>I hack on this project with <a href="http://robert-deluca.com" target="_blank">Robert DeLuca</a>.</p>
+<p>I hack on this project with <a href="http://robert-deluca.com">Robert DeLuca</a>.</p>

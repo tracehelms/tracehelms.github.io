@@ -8,7 +8,7 @@ permalink: projects/
   {% for project in site.projects reversed %}
     <article class="project">
       <header>
-        <h1 class="post-title"><a href="{{ project.project_url }}" target="_blank">{{ project.title }}</a></h1>
+        <h1 class="post-title"><a href="{{ project.project_url }}">{{ project.title }}</a></h1>
         <p class="post-date">{{ project.started }} - {{ project.ended }}</p>
       </header>
       <div class="project-content">

@@ -8,4 +8,4 @@ ended: July 2014
 
 <p>I worked on this site for the majority of my time at IZEA. I mostly dwelled in the back end but occasionally give the front end some love.</p>
 
-<p><a href="https://izea.com" target="_blank">This site went into public beta March, 2014.</a></p>
+<p>This site went into public beta March, 2014.</p>
