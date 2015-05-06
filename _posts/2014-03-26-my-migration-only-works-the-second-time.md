@@ -2,7 +2,7 @@
 layout: post
 title:  My Migration Only Works The Second Time
 date:   2014-03-26 10:44:00
-categories: ramblings
+categories: posts
 ---
 
 You want to write a Rails 3.2 migration that also transforms some data, you say? You might want to try something like this:

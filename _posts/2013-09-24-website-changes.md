@@ -2,7 +2,7 @@
 layout: post
 title:  "Website Changes"
 date:   2013-09-28 08:21:00
-categories: ramblings
+categories: posts
 ---
 
 Hello, world! I'm in the process of changing my website.

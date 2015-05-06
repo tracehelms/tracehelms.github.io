@@ -2,7 +2,7 @@
 layout: post
 title:  Disposable Employees
 date:   2014-08-10 10:44:00
-categories: ramblings
+categories: posts
 ---
 
 <blockquote>Train people like you want them to leave and treat them like you don't.</blockquote>

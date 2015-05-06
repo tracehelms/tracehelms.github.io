@@ -2,7 +2,7 @@
 layout: post
 title:  Coming Along
 date:   2014-01-11 14:44:00
-categories: ramblings
+categories: posts
 ---
 
 Ahhh, a functioning website. One that doesn't look completely terrible even! (OK, don't crush

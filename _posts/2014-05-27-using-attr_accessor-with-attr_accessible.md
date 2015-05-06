@@ -2,7 +2,7 @@
 layout: post
 title:  Using attr_accessor with attr_accessible in Rails
 date:   2014-05-27 10:44:00
-categories: ramblings
+categories: posts
 ---
 
 I've found using `attr_accessor` on Rails projects is a stumbling block for many developers. We've been using `attr_accessible` our entire Rails career, but then we jump on a project and see `attr_accessor` defined in a Rails model. What the ...? In this post we'll talk about how to use `attr_accessor` with Rails' `attr_accessible`, where it can be useful, and things to watch out for.

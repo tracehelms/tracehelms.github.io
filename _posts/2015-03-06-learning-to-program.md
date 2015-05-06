@@ -2,7 +2,7 @@
 layout: post
 title:  Learning to Program
 date:   2015-03-06 12:00:00
-categories: ramblings
+categories: posts
 ---
 
 <blockquote>If you're learning to program, you should be programming. -<a href="http://www.cprogramming.com/how_to_learn_anything.html" target="_blank">Alex Allain</a></blockquote>

@@ -5,8 +5,7 @@ collections:
 - projects
 
 markdown: redcarpet
-# pygments: true
-permalink: pretty
+permalink: "/:categories/:title"
 sass:
   sass_dir: assets/css
   style:  compressed  # nested|expanded|compact|compressed
