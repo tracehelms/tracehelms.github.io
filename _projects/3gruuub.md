@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  gruuub
-project_url: http://gruuub.herokuapp.com
+title:  gruuub.com
+project_url: http://www.gruuub.com
 started: May 2015
 ended: Current
 ---
@@ -10,4 +10,4 @@ ended: Current
 
 <p>Gruuub is written in Go. New unique combinations of <code>query</code> and <code>location</code> take some time because it's calling the Yelp API. After that though, the results are cached and the response-time is super fast.</p>
 
-<p>This site is under active development. The site works just fine without styling, but I'm working on making it pretty.</p>
+<p>This site is under active development. See the code <a href="https://github.com/tracehelms/gruuub">here</a>.</p>
