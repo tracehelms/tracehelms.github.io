@@ -82,6 +82,15 @@ article{
       margin-top: 0;
     }
   }
+  .comments-link {
+    margin: 2em auto 3em;
+    text-align: center;
+
+    a {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
 }
 .post-listing {
   margin-bottom: 1.5em;
