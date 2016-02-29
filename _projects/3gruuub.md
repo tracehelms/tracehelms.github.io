@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  gruuub.com
+title:  Gruuub
 project_url: http://www.gruuub.com
-started: May 2015
-ended: Current
+started: April 2015
+ended: May 2015
 ---
 
 <p>I originally started this app as the subject of a speech I gave at the <a href="http://www.meetup.com/Boulder-Gophers">Boulder Gophers</a> meetup. Picking a lunch spot can be hard, especially when you eat out a lot. Let gruuub do it for you!</p>
