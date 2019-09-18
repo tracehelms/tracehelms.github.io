@@ -4,7 +4,8 @@
 @import 'reset.scss';
 
 /* Import Google Fonts */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic|Oswald:400,400bold);
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic|Oswald:400,400bold);
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
 /* Import Syntax Highlighting Styles */
 @import "grid";
@@ -20,8 +21,8 @@ $font: #000000;
 $font-light: #f6f6f6;
 $code-background: #eaeef5;
 
-h1, h2, h3, h4, h5, h6 { font-family: "Oswald", "Helvetica Neue", Arial, sans-serif;}
-p, body { font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: "Lato", "Helvetica Neue", Arial, sans-serif;}
+p, body { font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif; }
 
 html, body {
   @include container;
